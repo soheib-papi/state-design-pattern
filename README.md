@@ -23,6 +23,8 @@ The problem tends to get bigger as a project evolves. It’s quite difficult to 
 ## Solution
 The State pattern suggests that you create new classes for all possible states of an object and extract all state-specific behaviors into these classes.
 
+![State UML Diagram](https://refactoring.guru/images/patterns/diagrams/state/solution-en.png)
+
 Instead of implementing all behaviors on its own, the original object, called context, stores a reference to one of the state objects that represents its current state, and delegates all the state-related work to that object.
 
 To transition the context into another state, replace the active state object with another object that represents that new state. This is possible only if all state classes follow the same interface and the context itself works with these objects through that interface.
