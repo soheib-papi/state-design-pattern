@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using state_design_pattern.state;
+
+var canvas = new Canvas();
+canvas.SetCurrentTool(new EraserTool());
+canvas.MouseDown();
+canvas.MouseUp();
+
+Console.ReadLine();
